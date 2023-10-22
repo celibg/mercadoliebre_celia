@@ -26,7 +26,7 @@ app.post('/login', (req, res) => {
     res.redirect('/login');
 });
 
-const port = 8080;
+const port = process.env.PORT || 8081;
 
 app.listen(port, () => {
     console.log(`Servidor iniciado en http://localhost:${port}`);
