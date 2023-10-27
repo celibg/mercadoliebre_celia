@@ -34,10 +34,10 @@
   }
 
   div.top-header {
-    padding: 5%;
     display: flex;
+    width: 100%;
     align-items: center;
-    justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   header div.logo {
@@ -91,6 +91,7 @@
   .copy-header {
     text-align: center;
     margin-top: 10px;
+    margin: auto;
 }
 
   
@@ -110,9 +111,7 @@
     width: 40px;
   }
   
-.banner {
-  margin-top: 240px;
-}
+
 .titulares {
   margin: 10px;
 }
@@ -148,7 +147,7 @@
 
   .discount {
     width: 70%;
-    margin: 0;
+    margin-left: 20px;
   }
   
   .product-delivery-icon {
@@ -208,6 +207,10 @@ article div.main-article h4.description {
   footer {
     text-align: center;
     margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .create-form {
@@ -243,13 +246,12 @@ article div.main-article h4.description {
     max-width: 350px;
     text-align: right;
   }
-  .form {
-    display: none;
-  }
+
   .burger-menu {
     display: none;
   }
-  .main-nav-bar {
+  nav.main-nav-bar {
+    display: block;
     display: flex;
     justify-content: space-between;
   }
@@ -273,18 +275,30 @@ article div.main-article h4.description {
   article div.main-article h4.description {
     display: block;
   }
+  footer {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  footer section h4.copy {
+    position: relative;
+    top: 0;
+    
+  }
 }
 @media (min-width: 769px) {
 
-  .top-header{
+  div.top-header{
     align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
   }
   .logo {
     width: 350px;
   }
   .copy-header {
     max-width: none;
-    margin: 0;
   }
 
   .main-nav-bar li { 
